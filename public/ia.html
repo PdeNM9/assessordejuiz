@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessor de Juiz - IA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Assessor</span> de Juiz</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="login-form">
+            <h2>Login</h2>
+            <form id="auth-form">
+                <input type="text" id="username" placeholder="Nome de usuário" required>
+                <input type="password" id="password" placeholder="Senha" required>
+                <input type="submit" value="Entrar">
+            </form>
+        </div>
+
+        <div id="ai-interface">
+            <h2>Interface de IA</h2>
+            <textarea id="legal-text" rows="10" placeholder="Cole aqui o texto jurídico para análise"></textarea>
+            <input type="submit" value="Analisar" id="analyze-btn">
+            <div id="ai-output"></div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('auth-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you would typically send a request to your server to authenticate the user
+            // For this example, we'll just show the AI interface
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('ai-interface').style.display = 'block';
+        });
+
+        document.getElementById('analyze-btn').addEventListener('click', function() {
+            var legalText = document.getElementById('legal-text').value;
+            // Here you would typically send the text to your AI service for analysis
+            // For this example, we'll just display a placeholder response
+            document.getElementById('ai-output').innerHTML = '<h3>Análise da IA:</h3><p>Análise do texto jurídico fornecido...</p>';
+        });
+    </script>
+</body>
+</html>
