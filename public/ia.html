@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assessor de Juiz - IA</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ia.css">
 </head>
 <body>
     <header>
@@ -21,7 +22,7 @@
         </div>
     </header>
 
-    <div class="container">
+    <main class="container">
         <div id="login-form">
             <h2>Login</h2>
             <form id="auth-form">
@@ -37,23 +38,12 @@
             <input type="submit" value="Analisar" id="analyze-btn">
             <div id="ai-output"></div>
         </div>
-    </div>
+    </main>
 
-    <script>
-        document.getElementById('auth-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Here you would typically send a request to your server to authenticate the user
-            // For this example, we'll just show the AI interface
-            document.getElementById('login-form').style.display = 'none';
-            document.getElementById('ai-interface').style.display = 'block';
-        });
-
-        document.getElementById('analyze-btn').addEventListener('click', function() {
-            var legalText = document.getElementById('legal-text').value;
-            // Here you would typically send the text to your AI service for analysis
-            // For this example, we'll just display a placeholder response
-            document.getElementById('ai-output').innerHTML = '<h3>Análise da IA:</h3><p>Análise do texto jurídico fornecido...</p>';
-        });
-    </script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Assessor de Juiz. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

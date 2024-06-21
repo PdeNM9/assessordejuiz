@@ -1,0 +1,43 @@
+/* index.css */
+
+/* Estilos da seção de destaque */
+#showcase {
+    min-height: 400px;
+    background: url('/api/placeholder/800/400') no-repeat center center/cover;
+    text-align: center;
+    color: #ffffff;
+    background-color: #3d5a80;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+/* Estilos das caixas de recursos */
+#features {
+    margin-top: 20px;
+}
+
+.feature-box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    background-color: #ffffff;
+    margin: 1%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.feature-box img {
+    width: 90px;
+}
+
+.feature-box h3 {
+    color: #3d5a80;
+}

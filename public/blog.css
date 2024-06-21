@@ -1,0 +1,22 @@
+/* blog.css */
+
+/* Estilos para a página de blog */
+#blog-posts {
+    margin-top: 20px;
+}
+
+.blog-post {
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.blog-post h2 {
+    color: #3d5a80;
+}
+
+.blog-post .meta {
+    color: #98c1d9;
+    margin-bottom: 10px;
+}
